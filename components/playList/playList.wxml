@@ -1,0 +1,16 @@
+<view wx:for="{{arr}}" wx:key='index' class="videoConnet">
+    <view class="vieImg">
+      <view>
+        <image src="{{item.coverImgUrl}}" class="songimg"></image>
+      </view>
+      <view></view>
+    </view>
+    <view class="title">
+      <view class="titlea">{{item.name}}</view>
+      <view class="titleb">
+        <view>{{item.trackCount}}首音乐</view>
+        <view>by {{item.creator.nickname}}</view>
+        <view>播放{{item.playCount}}次</view>
+      </view>
+    </view>
+  </view>

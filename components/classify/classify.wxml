@@ -1,0 +1,49 @@
+<view class="box">
+  <scroll-view scroll-x>
+    <view class="box1">
+      <view bindtap="recommend">
+        <view class="imga">
+          <image src="../../assets/recommend.png" class="img"></image>
+        </view>
+        <view>每日推荐</view>
+      </view>
+      <view bindtap="personalFM">
+        <view class="imga">
+          <image src="../../assets/FM.png" class="img"></image>
+        </view>
+        <view>私人FM</view>
+      </view>
+      <view  bindtap="playlist">
+        <view class="imga">
+          <image src="../../assets/gedan.png" class="img"></image>
+        </view>
+        <view>歌单</view>
+      </view>
+      <view>
+        <view class="imga">
+          <image src="../../assets/songList.png" class="img"></image>
+        </view>
+        <view>排行榜</view>
+      </view>
+      <view>
+        <view class="imga">
+          <image src="../../assets/Sinatv.png" class="img"></image>
+        </view>
+        <view>直播</view>
+      </view>
+      <view>
+        <view class="imga">
+          <image src="../../assets/collection.png" class="img"></image>
+        </view>
+        <view>数字专辑</view>
+      </view>
+      <view>
+        <view class="imga">
+          <image src="../../assets/sing.png" class="img"></image>
+        </view>
+        <view>唱聊</view>
+      </view>
+    </view>
+  </scroll-view>
+  <van-toast id="van-toast" />
+</view>

@@ -1,0 +1,41 @@
+.connet{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30rpx;
+  background-color: #ffffff;
+}
+.connet1{
+  display: flex;
+  align-items: center;
+}
+.img{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.DetailsSong{
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  color: #333333;
+}
+.DetailsSong2{
+  font-size: 24rpx;
+  color: #999999;
+}
+.box1{
+  margin-right: 30rpx;
+}
+.palyimg{
+  width: 60rpx;
+  height:60rpx;
+}
+.imgs {
+  width: 50rpx;
+  height: 50rpx;
+}

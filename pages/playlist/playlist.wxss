@@ -1,0 +1,68 @@
+.nameText {
+  font-size: 26rpx;
+  width: 552rpx;
+  padding: 8rpx 0;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  color: #333333;
+  background-color: rgba(255, 255, 255, 0.8);
+position: absolute;
+bottom: 136rpx;
+left: 0;
+z-index: 999;
+text-align: center;
+}
+.box{
+  height: 80% !important;
+  bottom: 0;
+}
+.activebox{
+  height: 100% !important;
+}
+.connet{
+  border-radius: 20rpx;
+ border: 1px solid #999999;
+  overflow: hidden;
+  position: relative;
+}
+/* 轮播 */
+.top{
+  padding: 30rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20rpx;
+}
+.top>view{
+  width: 30%;
+  margin: 20rpx 0;
+  position: relative;
+}
+.top-img{
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 20rpx;
+}
+.top-name{
+  display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+overflow: hidden;
+font-size: 26rpx;
+color: #333333;
+}
+.top-playCount{
+position: absolute;
+top: 8rpx;
+right: 6rpx;
+align-items: center;
+font-size: 26rpx;
+color: #ffffff;
+background-color:#dfdfdf;
+border-radius: 20rpx;
+padding: 0 10rpx;
+}
+.albumimg{
+  width: 25rpx;
+  height: 25rpx;
+}

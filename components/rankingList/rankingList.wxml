@@ -1,0 +1,23 @@
+<view class="connet">
+  <view class="connet1">排行榜</view>
+  <view class="connet2">更 多
+    <van-icon name="arrow" size="26rpx" />
+  </view>
+</view>
+<scroll-view scroll-x style="white-space: nowrap;width:100%; background-color: #fafafa;">
+  <view class="box">
+    <view wx:for="{{arr}}" wx:key='index' class="boxa">
+      <view class="hander">{{item.playlist.name}}<van-icon name="arrow" /></view>
+     <view wx:for="{{item.playlist.tracks}}" wx:key='index' wx:for-item="itema" class="boxb">
+       <view><image src="{{itema.al.picUrl}}" class="img"></image></view>
+       <view class="indexa">{{index+1}}</view>
+       <view class="nameText">
+         <view class="nameText1">{{itema.name}}-</view>
+         <view wx:for="{{itema.ar}}" wx:key='index' wx:for-item="itemb" class="nameText2">
+           {{itemb.name}}
+         </view>
+        </view>
+     </view>
+    </view>
+  </view>
+</scroll-view>

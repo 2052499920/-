@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index",
+    "playsong":"/components/playsong/playsong"
+  },
+  "navigationBarTitleText": "搜索"
+}

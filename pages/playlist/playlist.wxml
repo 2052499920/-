@@ -1,0 +1,31 @@
+<view>
+  <swiper circular previous-margin="100rpx" next-margin="100rpx" bindchange="change" easing-function
+    current="{{current}}" style="height:350rpx">
+    <swiper-item wx:for="{{carousel}}" bindtap="click" wx:key="index" data-index="{{index}}" data-item="{{item}}"
+      class="{{index===current? 'activebox':'box'}}">
+      <view class="connet">
+        <view>
+          <image src="{{item.coverImgUrl}}"></image>
+        </view>
+        <view class="nameText">{{item.name}}</view>
+        <view class="top-playCount ">
+          <image src="../../assets/plays.png" class="albumimg"></image>
+          {{item.playCount}}
+        </view>
+      </view>
+    </swiper-item>
+
+  </swiper>
+</view>
+<view class="top">
+  <view wx:for="{{carousela}}" wx:key='index' bindtap="playlista" data-item="{{item}}">
+    <view>
+      <image src="{{item.coverImgUrl}}" class="top-img"></image>
+    </view>
+    <view class="top-name">{{item.name}}</view>
+    <view class="top-playCount ">
+      <image src="../../assets/plays.png" class="albumimg"></image>
+      {{item.playCount}}
+    </view>
+  </view>
+</view>

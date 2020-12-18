@@ -1,0 +1,38 @@
+.connet{
+  padding: 30rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.videoImg{
+  width: 48%;
+  border-radius: 30rpx;
+  background-color: #ffffff;
+  overflow: hidden;
+  box-shadow: 10rpx 10rpx 10rpx #f3f3f3;
+  margin-bottom: 20rpx;
+  position: relative;
+  padding-bottom: 60rpx;
+}
+.img{
+width: 100%;
+height: 400rpx;
+}
+.title{
+  font-size: 25rpx;
+  padding: 5rpx 0;
+  color: #333333;
+}
+.playTime{
+  font-size: 20rpx;
+  display: flex;
+  align-items: center;
+  color: #999999;
+  position: absolute;
+  bottom: 10rpx;
+  left: 15rpx;
+}
+.albumimg{
+  width: 20rpx;
+  height: 20rpx;
+}

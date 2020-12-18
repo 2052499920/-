@@ -1,0 +1,29 @@
+<view class="connet">
+  <view class="connet1">
+    <video class="videoCss" src='{{playVideo}}' controls direction show-fullscreen-btn show-play-btn
+      enable-progress-gesture enable-play-gesture="{{show}}" autoplay="{{show}}"
+      show-fullscreen-btn="{{false}}" enable-danmu="{{true}}" danmu-list="{{danmulist}}"></video>
+  </view>
+  <view class="connet2">
+<view  class="connet2-1">
+  <view><image src="{{videoDetail.avatarUrl}}" class="img"></image></view>
+  <view>{{videoDetail.creator.nickname}} <text class="attention">+</text></view>
+</view>
+<view class="description">{{videoDetail.description}}</view>
+<view class="playTime">{{videoDetail.playTime}}</view>
+  </view>
+  <view class="connet3">
+    <view>
+      <view><image src="../../assets/praise.png" class="imga"></image></view>
+      <view class="num">{{videoDetail.praisedCount}}</view>
+    </view>
+    <view>
+      <view><image src="../../assets/comment.png" class="imga"></image></view>
+      <view class="num">{{videoDetail.commentCount}}</view>
+    </view>
+    <view>
+      <view><image src="../../assets/share.png" class="imga"></image></view>
+      <view class="num">{{videoDetail.shareCount}}</view>
+    </view>
+  </view>
+</view>

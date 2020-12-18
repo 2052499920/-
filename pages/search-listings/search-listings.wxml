@@ -1,0 +1,46 @@
+<view class="connetAll">
+  <view class="search">
+    <view class="input">
+      <van-search value="{{ value }}" bindtap="input" bind:change="change" bind:search='search' bind:clear='clear'
+        placeholder="{{showKeyword}}" shape="round" />
+    </view>
+  </view>
+  <view wx:if="{{search.length>0}}">
+    <view class="searchTerms">搜索 “{{value}}”</view>
+    <view wx:for="{{search}}" wx:key='index'>
+      <van-cell title="{{item.keyword}}" icon="search" class="keyword" />
+    </view>
+  </view>
+  <view wx:if="{{show}}">
+    <van-tabs active="{{ active }}">
+      <van-tab title="综合">
+        <synthesize></synthesize>
+      </van-tab>
+      <van-tab title="单曲">
+        <single></single>
+      </van-tab>
+      <van-tab title="歌单">
+        <playList></playList>
+      </van-tab>
+      <van-tab title="视频">
+        <songVideo></songVideo>
+      </van-tab>
+      <van-tab title="歌词">
+        <lyrics></lyrics>
+      </van-tab>
+      <van-tab title="电台">
+        <transceiver></transceiver>
+      </van-tab>
+      <van-tab title="歌手">
+        <singer></singer>
+      </van-tab>
+      <van-tab title="专辑">
+        <collection></collection>
+      </van-tab>
+      <van-tab title="用户">
+        <consumer></consumer>
+      </van-tab>
+    </van-tabs>
+  </view>
+
+</view>

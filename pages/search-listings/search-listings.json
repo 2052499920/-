@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "synthesize":"../../components/synthesize/synthesize",
+    "single":"../../components/single/single",
+    "playList":"../../components/playList/playList",
+    "songVideo":"../../components/songVideo/songVideo",
+    "lyrics":"../../components/lyrics/lyrics",
+    "transceiver":"../../components/transceiver/transceiver",
+    "singer":"../../components/singer/singer",
+    "collection":"../../components/collection/collection",
+    "consumer":"../../components/consumer/consumer"
+  },
+  "navigationBarTitleText": "搜索"
+}

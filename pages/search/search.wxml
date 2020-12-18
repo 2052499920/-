@@ -1,0 +1,49 @@
+<view class="search">
+  <view class="input">
+    <van-search value="{{ value }}" bind:change="change" bind:search='search' bind:clear='clear'
+      placeholder="{{showKeyword}}" shape="round" />
+  </view>
+  <view class="cancel" bindtap="cancel">
+    取消
+  </view>
+</view>
+<view wx:if="{{search.length>0}}">
+  <view class="searchTerms">搜索 “{{value}}”</view>
+  <view wx:for="{{search}}" wx:key='index'>
+    <van-cell title="{{item.keyword}}" icon="search" class="keyword" />
+  </view>
+</view>
+<view wx:if="{{search.length===0}}">
+  <view wx:if="{{history.length>0}}" class="historyList">
+    <view class="historya">历史</view>
+    <scroll-view scroll-x style="white-space: nowrap;width:80%;">
+      <view class="history"> 
+        <view wx:for="{{history}}" wx:key='index' class="historyb" bindtap="searchHistory" data-item="{{item}}">
+          {{item}}
+        </view>
+      </view>
+    </scroll-view>
+    <view class="historyc" bindtap="clearAll"><van-icon name="delete" /></view>
+  </view>
+  <view class="connet">
+    <view class="connet1">
+      <view>热搜榜</view>
+      <view>
+        <van-icon name="play" /> 播放</view>
+    </view>
+  </view>
+  <view class="searchList">
+    <view wx:for="{{arr}}" wx:key='index' class="searchLista" bindtap="searchHot" data-item="{{item}}">
+      <text class="{{index===0||index===1||index===2? 'box':''}}">{{index+1}}</text>
+      <text class="{{index===0||index===1||index===2? 'boxa':''}}">{{item.searchWord}}</text>
+      <text wx:if="{{item.iconType===1}}" class="hot">HOT</text>
+      <text wx:if="{{item.iconType===5}}" class="arrows">↑</text>
+    </view>
+  </view>
+  <view class="more" bindtap="more" wx:if="{{show}}"><text>展开更多热搜 </text>
+    <van-icon name="arrow-down" size='28rpx' />
+  </view>
+  <view class="imagea">
+    <image src="../../assets/search.jpg" class="imagea1"></image>
+  </view>
+</view>

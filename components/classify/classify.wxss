@@ -1,0 +1,24 @@
+.box1{
+ display: flex;
+  white-space: nowrap;
+  font-size:24rpx;
+}
+.box1>view{
+  margin-right: 50rpx;
+  text-align: center;
+  color: #777777;
+}
+.imga{
+  width: 80rpx;
+  height: 80rpx;
+  background-color: #FDF5F5;
+  border-radius: 50%;
+  margin: 20rpx 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img{
+  width: 50rpx;
+  height: 50rpx;
+}

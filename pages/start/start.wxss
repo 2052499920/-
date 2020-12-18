@@ -1,0 +1,33 @@
+.connet{
+  width: 100wh;
+  height: 100vh;
+  background-color: #CB3F2E;
+  position: relative;
+}
+.img{
+  position: absolute;
+  padding: 30rpx;
+  background-color: #D94230;
+  border-radius: 50%;
+  margin: 30% 0 0 35%;
+}
+.img1{
+  width: 150rpx;
+  height: 150rpx;
+}
+.connet1{
+  position: absolute;
+  left: 0;
+  bottom: 80rpx;
+  width: 100%;
+  text-align: center;
+}
+.connet1-1{
+  font-size: 28rpxpx;
+  margin-bottom: 10rpx;
+  color: rgb(235, 235, 235);
+}
+.connet1-2{
+  font-size: 16rpx;
+  color: #d4d4d4;
+}

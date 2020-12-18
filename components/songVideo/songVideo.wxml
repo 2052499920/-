@@ -1,0 +1,14 @@
+<view class="connet">
+<view wx:for="{{arr}}" wx:key='index' class="videoImg" bindtap="playVideo" data-item="{{item}}">
+  <view><image src="{{item.coverUrl}}" class="img"></image></view>
+  <view class="title">{{item.title}}</view>
+  <view class="playTime">
+    <image src="../../assets/plays.png" class="albumimg"></image>
+    {{item.playTime}}</view>
+</view>
+</view>
+
+
+<!-- <view  wx:for="{{playVideo}}" wx:key='index'>
+  <video id="myvideo{{index}}"  src="{{item}}" controls bindplay="play"  data-index="{{index}}"></video>
+</view> -->

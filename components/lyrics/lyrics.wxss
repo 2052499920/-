@@ -1,0 +1,58 @@
+.box{
+background-color: #ffffff;
+}
+.connet{
+  padding: 30rpx;
+}
+.songName{
+  color: #333333;
+  font-size: 28rpx;
+  padding: 5rpx;
+  font-weight: bold;
+}
+.albumName{
+  font-size: 24rpx;
+  color: #999999;
+  padding: 4rpx 10rpx;
+}
+.conneta{
+  padding: 20rpx;
+  border-bottom: 2rpx solid #f7f7f7;
+  position: relative;
+}
+.conneta>view:nth-of-type(3){
+  font-size: 26rpx;
+  color: #666666;
+  line-height: 2em;
+}
+.lyrics{
+  height: 150rpx;
+  overflow: hidden;
+}
+.unfold{
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  color: #999999;
+  margin-top: 20rpx;
+}
+.push {
+  position: absolute;
+  right: 0;
+  top: 40rpx;
+}
+
+.push>image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.word{
+  position: absolute;
+  left: -12rpx;
+  top: 118rpx;
+  font-size: 20rpx;
+  background-color: #CDCDCD;
+  color: #F9F8F8;
+  padding: 2rpx;
+  border-radius: 4rpx;
+}

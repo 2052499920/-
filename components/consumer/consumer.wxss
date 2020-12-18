@@ -1,0 +1,60 @@
+.songList {
+  padding: 30rpx 30rpx 20rpx 30rpx;
+  background-color: #ffffff;
+}
+.user{
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 20rpx 0;
+  border-bottom: 2rpx solid #f7f7f7;
+}
+.userImg{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.userName{
+  margin-left: 25rpx;
+}
+.userNamea{
+  color: #5D87B6;
+  font-size: 28rpx;
+  display: flex;
+}
+.userNameb{
+font-size: 20rpx;
+padding: 15rpx;
+color: #999999;
+width: 450rpx;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+.addimg{
+  width: 20rpx;
+  height: 20rpx;
+}
+.attention{
+  font-size: 24rpx;
+  display: flex;
+  align-items: center;
+  border: 2rpx solid #FF4B4B;
+  color: #FF4B4B;
+  padding: 0 8rpx;
+  border-radius: 30rpx;
+  position: absolute;
+  right: 10rpx;
+  top: 58rpx;
+}
+.attentiona{
+  font-size: 30rpx;
+  margin-right: 2rpx;
+}
+.sex{
+margin-left: 30rpx;
+}
+.seximg{
+  width: 30rpx;
+  height: 30rpx;
+}

@@ -1,0 +1,25 @@
+<view class="box">
+  <view class="palys">
+  <view class="paly" bindtap="playAll">
+    <view>
+      <image src="../../assets/playAll.png" class="img"></image>
+    </view>
+    <view class="playText" >播放全部</view>
+  </view>
+  <view>
+    <van-icon name="certificate" size="45rpx"/>
+  </view>
+</view>
+
+<view>
+  <view wx:for="{{arr}}" wx:key='index' class="songAlls" bindtap="play" data-item="{{item}}">
+    <view class="song">
+      <view class="songName">{{item.name}}</view>
+      <view class=" author">{{item.ar[0].name}}-{{item.name}}</view>
+      <view class="push">
+        <image src="../../assets/push.png"></image>
+      </view>
+    </view>
+  </view>
+</view>
+</view>

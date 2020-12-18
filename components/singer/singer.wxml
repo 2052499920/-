@@ -1,0 +1,12 @@
+<view class="songList">
+  <view wx:for="{{arr}}" wx:key='index' class="ges">
+    <view>
+      <image src="{{item.img1v1Url}}" class="gesImg"></image>
+    </view>
+    <view class="gesName">{{item.name}}</view>
+    <view wx:if="{{item.accountId}}" class="enter">
+      <image src="../../assets/buddha.png" class="buddha"></image>
+      <text class="entera">已入驻</text>
+    </view>
+  </view>
+</view>

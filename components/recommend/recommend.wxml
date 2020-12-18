@@ -1,0 +1,13 @@
+<view class="connet">
+  <view class="connet1">推荐歌单</view>
+  <view  class="connet2" bindtap="more">更 多<van-icon name="arrow" size="26rpx"/></view>
+</view>
+<scroll-view scroll-x >
+<view class="box">
+  <view wx:for="{{arr}}" wx:key='index' class="boxa" bindtap="playlista" data-item="{{item}}">
+    <view class="box1"><image src="{{item.picUrl}}" class="img"></image></view>
+    <view class="nameText">{{item.name}}</view>
+    <view class="box2"><image src="../../assets/triangle.png" class="triangle"></image>{{item.playCount}}</view>
+  </view>
+</view>
+</scroll-view>

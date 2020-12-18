@@ -1,0 +1,64 @@
+<view class="connet">
+  <view>
+    <view class="imga" bindtap="showa" wx:if="{{showa}}">
+      <image src="../../assets/coverall.png" class="img"></image>
+      <view class="picUrl" style='animation-Play-State:{{add}}'>
+        <image src="{{img}}" class="picUrlimg"></image>
+      </view>
+    </view>
+    <view bindtap="showb" class="lyric" wx:if="{{!showa}}">
+      <scroll-view scroll-y style="height:800rpx;" scroll-with-animation scroll-top="{{distance*34.8}}">
+        <view wx:for="{{lyric}}" wx:key="index" class="lyrics">
+          <text class="{{active==index? 'box':''}}">{{item.text}}</text>
+        </view>
+        <view wx:if="{{str}}" class="str">{{str}}</view>
+      </scroll-view>
+    </view>
+  </view>
+  <view class="conneta">
+    <view class="plan">
+      <view class="schedule">{{stare}}</view>
+      <view class="plans">
+        <van-slider inactive-color='#2B2B2B' active-color='#646464' bind:change='onDrag' min="0" max="{{max}}"
+          value="{{value}}" use-button-slot>
+          <view class="custom-button" slot="button"></view>
+        </van-slider>
+      </view>
+      <view class="schedule">{{end}}</view>
+    </view>
+    <view class="conneta-1">
+      <view>
+        <image src="../../assets/circulation.png" class="imgs" bindtap="circulation" wx:if="{{flag==1}}"></image>
+        <image src="../../assets/circulation1.png" class="imgs" bindtap="circulation1" wx:if="{{flag==2}}"></image>
+        <image src="../../assets/random.png" class="imgs" bindtap="random" wx:if="{{flag==3}}"></image>
+      </view>
+      <view>
+        <image src="../../assets/up.png" class="imgs" bindtap="up"></image>
+      </view>
+      <view bindtap="play">
+        <image src="../../assets/playa.png" class="imgs1" bindtap="audioPlay" wx:if="{{show}}"></image>
+        <image src="../../assets/pause.png" class="imgs1" bindtap="audippause" wx:if="{{!show}}"></image>
+      </view>
+      <view>
+        <image src="../../assets/next.png" class="imgs" bindtap="next"></image>
+      </view>
+      <view>
+        <image src="../../assets/playList.png" class="imgs" bindtap="playList"></image>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="fiexdPlay">
+  <playsong></playsong>
+</view>
+<view class="playList">
+  <van-popup show="{{ playList }}" position="bottom"
+    custom-style="height: 80%;width:94%;margin-left:3%;margin-bottom:20rpx;background-color:#f7f7f7; border-radius:40rpx;padding:20rpx;"
+    bind:close="onClose">
+    <view class="song-list">当前播放</view>
+    <view wx:for="{{plays}}" wx:key='index' class="plays">
+      <view class="{{index===activeIndex?'playsIndex':''}}" bindtap="playsIndex" data-index="{{index}}"><text
+          class="plays-name1">{{item.name}}</text> - <text class="{{index===activeIndex?'playsIndexa':'plays-name2'}}">{{item.ar[0].name}}</text></view>
+    </view>
+  </van-popup>
+</view>

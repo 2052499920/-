@@ -1,0 +1,11 @@
+<view class="songList">
+  <view wx:for="{{arr}}" wx:key='index' class="ges">
+    <view>
+      <image src="{{item.blurPicUrl}}" class="albumImg"></image>
+    </view>
+    <view class="album">
+      <view class="albumName">{{item.name}}</view>
+      <view class="albumItem">{{item.artist.name}} {{item.publishTime}}</view>
+    </view>
+  </view>
+</view>

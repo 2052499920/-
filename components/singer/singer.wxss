@@ -1,0 +1,38 @@
+.songList {
+  padding: 30rpx 30rpx 20rpx 30rpx;
+  background-color: #ffffff;
+}
+.ges {
+  display: flex;
+  align-items: center;
+  padding: 15rpx 0;
+  position: relative;
+  border-bottom: 2rpx solid #f7f7f7;
+}
+.gesImg {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.gesName {
+  font-size: 26rpx;
+  color: #333333;
+  margin-left: 30rpx;
+}
+.enter{
+  position: absolute;
+  right: 16rpx;
+  top: 60rpx;
+  display: flex;
+  align-items: center;
+}
+.buddha{
+  width: 25rpx;
+  height: 25rpx;
+}
+.entera{
+  font-size: 22rpx;
+  color: #999999;
+  padding-left: 10rpx;
+}

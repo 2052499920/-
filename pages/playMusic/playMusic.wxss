@@ -1,0 +1,159 @@
+.connet {
+  width: 100vw;
+  height: 100vh;
+  background-color: #010101;
+  position: relative;
+}
+
+.imga {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  padding-top: 100rpx;
+}
+
+.img {
+  width: 550rpx;
+  height: 550rpx;
+}
+
+.picUrl {
+  position: absolute;
+  top: 206rpx;
+  left: 207rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: image 10s linear infinite;
+}
+
+@keyframes image {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.picUrlimg {
+  width: 340rpx;
+  height: 340rpx;
+  border-radius: 50%;
+}
+
+.star {
+  background-color: #fff;
+}
+
+/* 播放/暂停 */
+.conneta {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.conneta-1 {
+  display: flex;
+  padding: 40rpx 70rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imgs {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.imgs1 {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+/* 歌词 */
+.lyric {
+  width: 100%;
+  color: #fff;
+  padding-top: 40rpx;
+  text-align: center;
+}
+
+.custom-button {
+  width: 18rpx;
+  height: 18rpx;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  padding: 0 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.plans {
+  width: 570rpx;
+  padding: 0 20rpx;
+}
+
+.schedule {
+  font-size: 16rpx;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.box {
+  color: rgb(216, 16, 16);
+  transition: 1.5s all ease;
+}
+
+.distance {
+  transition: 1s all ease;
+}
+
+.lyrics {
+  color: #ccc;
+  padding: 15rpx 0;
+}
+
+.str {
+  color: #ffffff;
+  text-align: center;
+  padding: 40rpx;
+  font-size: 28rpx;
+}
+
+/* 歌单 */
+.playList {
+  margin: 20rpx;
+  border-radius: 30rpx;
+  overflow: hidden;
+}
+
+.custom-style {
+  margin: 20rpx;
+}
+
+.song-list {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.playsIndex{
+  color: red !important;
+}
+.playsIndexa{
+  color: red !important;
+  font-size: 24rpx;
+}
+.plays{
+  padding: 20rpx;
+}
+.plays-name1 {
+  font-size: 28rpx;
+}
+
+.plays-name2 {
+  font-size: 24rpx;
+  color: #999999;
+}

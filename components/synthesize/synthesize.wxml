@@ -1,0 +1,154 @@
+<!-- <view wx:for="{{result.order}}" wx:key='index'>
+  <view wx:for="{{result[item][item+'s']}}"  wx:for-item="itema" class="{{item==='song'? 'song':''}} ">
+    <view>{{itema.nickname||itema.name}}</view>
+  </view>
+</view> -->
+
+<view class="box1">
+  <view class="connet">
+    <view class="connet1">
+      <view>单曲</view>
+      <view>
+        <van-icon name="play" /> 播放</view>
+    </view>
+  </view>
+  <view wx:for="{{result.song.songs}}" wx:key='index'>
+    <view class="song">
+      <view class="songName">{{item.name}}</view>
+      <view class=" author">{{item.ar[0].name}}-{{item.name}}</view>
+      <view class="sing" wx:if="{{index===0}}">演唱</view>
+      <view class="push">
+        <image src="../../assets/push.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="moreText">{{result.song.moreText}}
+    <van-icon name="arrow" />
+  </view>
+</view>
+
+<view class="box2">
+  <view class="video">视频</view>
+  <view wx:for="{{result.video.videos}}" wx:key='index' class="videoConnet" bindtap="playvideo" data-item="{{item}}">
+    <view class="vieImg">
+      <view>
+        <image src="{{item.coverUrl}}" class="videoimg"></image>
+      </view>
+      <view></view>
+    </view>
+    <view class="title">
+      <view class="titlea">{{item.title}}</view>
+      <view class="titleb">
+        <view>{{item.durationms}},</view>
+        <view>by {{item.creator[0].userName}},</view>
+        <view>播放{{item.playTime}}次</view>
+      </view>
+    </view>
+  </view>
+  <view class="moreTexta">{{result.video.moreText}}
+    <van-icon name="arrow" />
+  </view>
+</view>
+
+<view class="songList">
+  <view class="video">歌单</view>
+  <view wx:for="{{result.playList.playLists}}" wx:key='index' class="videoConnet">
+    <view class="vieImg">
+      <view>
+        <image src="{{item.coverImgUrl}}" class="songimg"></image>
+      </view>
+      <view></view>
+    </view>
+    <view class="title">
+      <view class="titlea">{{item.name}}</view>
+      <view class="titleb">
+        <view>{{item.trackCount}}首音乐</view>
+        <view>by {{item.creator.nickname}}</view>
+        <view>播放{{item.playCount}}次</view>
+      </view>
+    </view>
+  </view>
+  <view class="moreTexta">{{result.playList.moreText}}
+    <van-icon name="arrow" />
+  </view>
+</view>
+
+<view class="songList">
+  <view class="video">相关搜索</view>
+  <view class="songConnet">
+    <view wx:for="{{result.sim_query.sim_querys}}" wx:key='index' class="songText">{{item.keyword}}</view>
+  </view>
+</view>
+
+<view class="songList">
+  <view class="video">歌手</view>
+  <view wx:for="{{result.artist.artists}}" wx:key='index' class="ges">
+    <view>
+      <image src="{{item.img1v1Url}}" class="gesImg"></image>
+    </view>
+    <view class="gesName">{{item.name}}</view>
+  </view>
+  <view class="moreTexta">{{result.artist.moreText}}
+    <van-icon name="arrow" />
+  </view>
+</view>
+
+<view class="songList">
+  <view class="video">专辑</view>
+  <view wx:for="{{result.album.albums}}" wx:key='index' class="ges">
+    <view>
+      <image src="{{item.blurPicUrl}}" class="albumImg"></image>
+    </view>
+    <view class="album">
+      <view class="albumName">{{item.name}}</view>
+      <view class="albumItem">{{item.artist.name}} {{item.publishTime}}</view>
+    </view>
+  </view>
+  <view class="moreTexta">{{result.album.moreText}}
+    <van-icon name="arrow" />
+  </view>
+</view>
+
+<view class="songList">
+  <view class="video">播单</view>
+  <view wx:for="{{result.djRadio.djRadios}}" wx:key='index' class="ges">
+    <view>
+      <image src="{{item.picUrl}}" class="albumImg"></image>
+    </view>
+    <view class="album djRadio">
+      <view class="albumName">{{item.name}}</view>
+      <view class="albumItem djRadioItem">
+        <view class="transmit">
+          <image src="../../assets/plays.png" class="albumimg"></image>
+          {{ item.playCount}}
+        </view>
+        <view class="transmit ">
+          <image src="../../assets/frequency.png" class="albumimg"></image>
+          {{ item.programCount}}
+        </view>
+        <view>{{item.dj.nickname}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="moreTexta">{{result.djRadio.moreText}}
+    <van-icon name="arrow" />
+  </view>
+</view>
+
+<view class="songList">
+  <view class="video">用户</view>
+  <view wx:for="{{result.user.users}}" wx:key='index' class="user">
+    <view>
+      <image src="{{item.avatarUrl}}" class="userImg"></image>
+    </view>
+    <view class="userName">{{item.nickname}}</view>
+    <view class="attention"><text class="attentiona">+</text>关注</view>
+    <view class="sex">
+      <view wx:if="{{item.gender===1}}"><image src="../../assets/man.png" class="seximg"></image></view>
+      <view wx:if="{{item.gender===2}}"><image src="../../assets/girl.png" class="seximg"></image></view>
+    </view>
+  </view>
+  <view class="moreTexta">{{result.user.moreText}}
+    <van-icon name="arrow" />
+  </view>
+</view>

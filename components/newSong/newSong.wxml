@@ -1,0 +1,61 @@
+<view class="connet">
+  <view class="connet1">
+    <view bindtap="newSong" class="{{flag==1? 'box':''}}">新歌</view>
+    <text class="connet1-1">|</text>
+    <view bindtap="newDisc" class="{{flag==2? 'box':''}}">新碟</view>
+    <text class="connet1-1">|</text>
+    <view bindtap="digitAlbum" class="{{flag==3? 'box':''}}">数字专辑</view>
+  </view>
+  <view class="connet2">更 多
+    <van-icon name="arrow" size="26rpx" />
+  </view>
+</view>
+
+<view>
+  <view wx:if="{{flag===1}}">
+    <scroll-view scroll-x>
+      <view class="song">
+        <view wx:for="{{newsong}}" wx:key='index' class="newsong"  bindtap="play" data-item="{{item}}"  data-index="{{index}}">
+          <view class="song-img">
+           <view><image src="{{item.picUrl}}" class="img"></image></view>
+           <view class="song-img1"><image src="../../assets/play.png" class="song-img1-1"></image></view>
+          </view>
+          <view class="song-name">
+            <view class="song-namea">{{item.name}}</view>
+            <view class="song-nameb">{{item.song.album.artists[0].name}}</view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view wx:if="{{flag===2}}">
+    <scroll-view scroll-x>
+      <view class="song">
+        <view wx:for="{{newest}}" wx:key='index' class="newsong" bindtap="newest" data-item="{{item}}">
+          <view class="song-img">
+           <view><image src="{{item.picUrl}}" class="img"></image></view>
+          </view>
+          <view class="song-name">
+            <view class="song-namea">{{item.name}}</view>
+            <view class="song-nameb">{{item.artist.name}}</view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view wx:if="{{flag===3}}">
+    <scroll-view scroll-x>
+      <view class="song">
+        <view wx:for="{{album}}" wx:key='index' class="newsong">
+          <view class="song-img">
+           <view><image src="{{item.picUrl}}" class="img"></image></view>
+          </view>
+          <view class="song-name">
+            <view class="song-namea">{{item.name}}</view>
+            <view class="song-nameb">{{item.artist.name}}</view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

@@ -1,0 +1,68 @@
+.connet {
+  display: flex;
+  padding: 30rpx;
+  justify-content: space-between;
+}
+
+.connet1 {
+  font-weight: bold;
+  font-size: 30rpx;
+  color: #333333;
+}
+
+.connet2 {
+  border: 2rpx solid rgb(233, 233, 233);
+  color: #666666;
+  font-size: 20rpx;
+  padding: 4rpx 20rpx;
+  border-radius: 25rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  margin: 0 30rpx;
+}
+
+.box>view {
+  margin-right: 20rpx;
+}
+
+.boxa {
+  position: relative;
+}
+
+.img {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 20rpx;
+}
+
+.nameText {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 22rpx;
+  letter-spacing: 4rpx;
+}
+
+.box2 {
+  position: absolute;
+  top: 6rpx;
+  right: 8rpx;
+  font-size: 20rpx;
+  color: #ffffff;
+  padding: 5rpx 20rpx;
+  background-color: #929191;
+  display: flex;
+  align-items: center;
+  border-radius: 30rpx;
+}
+
+.triangle {
+  width: 18rpx;
+  height: 18rpx;
+}

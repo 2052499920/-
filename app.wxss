@@ -1,0 +1,15 @@
+.dsp-f {
+  display: flex;
+}
+.dsp-x-c {
+  justify-content: center;
+}
+.dsp-y-c {
+  align-items: center;
+}
+.jc-bw {
+  justify-content: space-between;
+}
+.jc-ar {
+  justify-content: space-around;
+}

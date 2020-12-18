@@ -1,0 +1,111 @@
+.title{
+  margin-left: 10rpx;
+}
+.title1{
+  border: 1rpx solid red;
+  padding: 4rpx 16rpx;
+  font-size: 20rpx;
+  border-radius: 20rpx;
+  color: red;
+}
+.title2{
+  font-size: 20rpx;
+  margin-right: 20rpx;
+}
+.title2a{
+padding-right: 6rpx;
+}
+.title3{
+  font-size: 20rpx;
+  color: #999999;
+}
+.connet{
+  background-color: #f1f1f1;
+  padding: 20rpx;
+}
+.connet>view{
+  margin-bottom: 40rpx;
+  border-radius: 25rpx;
+  overflow: hidden;
+  font-size: 28rpx;
+}
+.connet1{
+  background-color: #ffffff;
+  font-size: 24rpx;
+  padding: 20rpx 32rpx;
+  border-bottom: 1px solid #F6F7F8;
+  color: #999999;
+}
+.box{
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.box1{
+  margin-right: 30rpx;
+}
+.box1-2{
+  font-size: 30rpx;
+  color: #333333;
+}
+.box2{
+  background-color: #9D9D9D;
+  padding: 20rpx;
+  position: relative;
+}
+.box2-1{
+  font-size: 32rpx;
+  color: #ffffff;
+}
+.box2-2{
+  font-size: 20rpx;
+  color: #CDCDCF;
+  padding:4rpx 0 20rpx 0;
+  border-bottom: 2rpx solid #A7A7A8;
+}
+.box2-3{
+  font-size: 22rpx;
+  color: #CDCDCF;
+  padding-top: 20rpx;
+}
+.box2-4{
+position: absolute;
+top: 26rpx;
+right: 30rpx;
+font-size: 24rpx;
+border: 1px solid #f2f2f2;
+padding: 4rpx 10rpx;
+border-radius: 21rpx;
+color: #ffffff;
+}
+.box2-5{
+  position: absolute;
+  bottom: 0;
+  right: 50rpx;
+}
+.box2-5a{
+  width: 50rpx;
+  height: 50rpx;
+}
+.hand{
+width: 120rpx;
+height: 120rpx;
+border-radius: 50%;
+}
+.user{
+  font-size: 26rpx;
+  margin: 30rpx 0 0 20rpx;
+}
+.connetText{
+  position: relative;
+}
+.connetText1{
+  position: absolute;
+  top: 34rpx;
+  right: 20rpx;
+}
+.scan{
+  width: 60rpx;
+  height: 60rpx;
+}

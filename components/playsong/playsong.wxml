@@ -1,0 +1,21 @@
+<view class="connet" wx:if="{{flag}}">
+  <view class="connet1" bindtap="particulars">
+    <view>
+      <image src="{{DetailsSong.al.picUrl}}" class="img"></image>
+    </view>
+    <view class="DetailsSong">
+      <text class="DetailsSong1">{{DetailsSong.name}}</text> - <text class="DetailsSong2">{{DetailsSong.al.name}}</text>
+    </view>
+  </view>
+  <view>
+    <view class="box">
+      <view class="box1">
+        <image src="../../assets/palysong.png" class="palyimg" wx:if="{{show}}" bindtap="play"></image>
+        <image src="../../assets/pause1.png" class="palyimg" wx:if="{{!show}}" bindtap="pause"></image>
+      </view>
+      <view>
+        <image src="../../assets/playList1.png" class="imgs"></image>
+      </view>
+    </view>
+  </view>
+</view>

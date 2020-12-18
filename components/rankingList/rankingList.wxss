@@ -1,0 +1,79 @@
+.connet {
+  display: flex;
+  padding: 30rpx;
+  justify-content: space-between;
+  border-top: 10rpx solid #e2e2e2;
+  background-color: #fafafa;
+}
+
+.connet1 {
+  font-weight: bold;
+  font-size: 30rpx;
+  color: #333333;
+}
+
+.connet2 {
+  border: 2rpx solid rgb(233, 233, 233);
+  color: #666666;
+  font-size: 20rpx;
+  padding: 4rpx 20rpx;
+  border-radius: 25rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+}
+
+.boxa {
+  display: inline-block;
+  background-color: #ffffff;
+  border-radius: 25rpx;
+  margin-left: 30rpx;
+  padding: 20rpx;
+}
+
+.boxb {
+  width: 580rpx;
+  display: flex;
+  margin-bottom: 20rpx;
+  align-items: center;
+}
+
+.img {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 20rpx;
+}
+
+.hander {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  padding: 10rpx 0;
+}
+
+.indexa {
+  font-weight: bold;
+  margin: 0 10rpx;
+}
+
+.nameText {
+  display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nameText1 {
+  font-size: 26rpx;
+  color: #333333;
+}
+
+.nameText2 {
+  font-size: 22rpx;
+  color: #999999;
+}

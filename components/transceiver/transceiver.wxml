@@ -1,0 +1,21 @@
+<view class="songList">
+  <view wx:for="{{arr}}" wx:key='index' class="ges">
+    <view>
+      <image src="{{item.picUrl}}" class="albumImg"></image>
+    </view>
+    <view class="album djRadio">
+      <view class="albumName">{{item.name}}</view>
+      <view class="albumItem djRadioItem">
+        <view class="transmit">
+          <image src="../../assets/plays.png" class="albumimg"></image>
+          {{ item.playCount}}
+        </view>
+        <view class="transmit ">
+          <image src="../../assets/frequency.png" class="albumimg"></image>
+          {{ item.programCount}}
+        </view>
+        <view>{{item.dj.nickname}}</view>
+      </view>
+    </view>
+  </view>
+</view>

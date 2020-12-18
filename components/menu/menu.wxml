@@ -1,0 +1,163 @@
+<view class="connet">
+  <view class="connetText">
+    <view class="box" wx:if="{{!userMessage}}">
+      <view class="box1">
+        <image src="../../assets/hand.jpg" class="hand"></image>
+      </view>
+      <view>
+        <view class="box1-2" bindtap="login">立即登录 ></view>
+      </view>
+    </view>
+
+    <view class="box" wx:if="{{userMessage}}">
+      <view>
+        <image src="{{userMessage.profile.avatarUrl}}" class="hand"></image>
+      </view>
+      <view>
+        <view class="user">{{userMessage.profile.nickname}}</view>
+      </view>
+    </view>
+    <view class="connetText1"><image src="../../assets/scan.png" class="scan"></image></view>
+  </view>
+  <view class="box2">
+    <view class="box2-1">开通黑胶VIP</view>
+    <view class="box2-2">立享超17项专属特权</view>
+    <view class="box2-3">黑胶VIP仅5元，享超17项专属特权！</view>
+    <view class="box2-4">会员中心</view>
+    <view class="box2-5">
+      <image src="../../assets/redPacket.png" class="box2-5a"></image>
+    </view>
+  </view>
+  <view>
+    <van-cell value="" icon="envelop-o" is-link>
+      <view slot="title">
+        <view class="title">消息中心</view>
+      </view>
+    </van-cell>
+    <van-cell value="" icon="upgrade" is-link>
+      <view slot="title">
+        <view class="title">云贝中心</view>
+      </view>
+      <view><text class="title1">签到</text></view>
+    </van-cell>
+    <van-cell value="" icon="bulb-o" is-link>
+      <view slot="title">
+        <view class="title">创作中心</view>
+      </view>
+    </van-cell>
+  </view>
+  <view>
+    <view class="connet1">音乐服务</view>
+    <van-cell value="" icon="coupon-o" is-link>
+      <view slot="title">
+        <view class="title">演出</view>
+      </view>
+    </van-cell>
+    <van-cell value="" icon="cart-circle-o" is-link>
+      <view slot="title">
+        <view class="title">商场</view>
+      </view>
+      <view class="title2a"><text class="title2">漫威twsx限时折</text>
+        <van-icon name="hot-sale" color="red" size="28rpx" dot />
+      </view>
+    </van-cell>
+    <van-cell value="" icon="music-o" is-link>
+      <view slot="title">
+        <view class="title">口袋彩铃</view>
+      </view>
+    </van-cell>
+    <van-cell value="" icon="desktop-o" is-link>
+      <view slot="title">
+        <view class="title">游戏中心</view>
+      </view>
+    </van-cell>
+  </view>
+  <view>
+    <view class="connet1">其他</view>
+    <van-cell value="" icon="setting-o" is-link>
+      <view slot="title">
+        <view class="title">设置</view>
+      </view>
+    </van-cell>
+    <van-cell value="" icon="tosend" is-link>
+      <view slot="title">
+        <view class="title">夜间模式</view>
+      </view>
+      <view>
+        <van-switch checked="{{ checked }}" size="40rpx" bind:change="onChange" />
+      </view>
+    </van-cell>
+    <van-cell value="" icon="underway-o" is-link>
+      <view slot="title">
+        <view class="title">定时关闭</view>
+      </view>
+    </van-cell>
+    <van-cell value="" icon="smile-o" is-link>
+      <view slot="title">
+        <view class="title">个性装扮</view>
+      </view>
+    </van-cell>
+    <van-cell value="" icon="service-o" is-link>
+      <view slot="title">
+        <view class="title">边听边存</view>
+      </view>
+      <view><text class="title3">未开启</text></view>
+    </van-cell>
+    <van-cell value="" icon="debit-pay" is-link>
+      <view slot="title">
+        <view class="title">在线听歌免流量</view>
+      </view>
+    </van-cell>
+    <van-cell value="" icon="exchange" is-link>
+      <view slot="title">
+        <view class="title">添加Siri捷径</view>
+      </view>
+    </van-cell>
+    <van-cell value="" icon="close" is-link>
+      <view slot="title">
+        <view class="title">音乐黑名单</view>
+      </view>
+    </van-cell>
+    <van-cell value="" icon="sign" is-link>
+      <view slot="title">
+        <view class="title">青少年模式</view>
+      </view>
+      <view><text class="title3">未开启</text></view>
+    </van-cell>
+    <van-cell value="" icon="aim" is-link>
+      <view slot="title">
+        <view class="title">音乐闹钟</view>
+      </view>
+    </van-cell>
+  </view>
+  <view>
+    <van-cell value="" icon="question-o" is-link>
+      <view slot="title">
+        <view class="title">帮助与反馈</view>
+      </view>
+    </van-cell>
+    <van-cell value="" icon="records" is-link>
+      <view slot="title">
+        <view class="title">我的订单</view>
+      </view>
+    </van-cell>
+    <van-cell value="" icon="coupon-o" is-link>
+      <view slot="title">
+        <view class="title">优惠券</view>
+      </view>
+    </van-cell>
+    <van-cell value="" icon="share-o" is-link>
+      <view slot="title">
+        <view class="title">分享网易云音乐</view>
+      </view>
+    </van-cell>
+    <van-cell value="" icon="warning-o" is-link>
+      <view slot="title">
+        <view class="title">关于</view>
+      </view>
+    </van-cell>
+  </view>
+  <view wx:if="{{userMessage}}">
+    <van-button type="default" block bind:click="logout">退出登录</van-button>
+  </view>
+</view>

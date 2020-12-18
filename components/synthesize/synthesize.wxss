@@ -1,0 +1,274 @@
+.connet {
+  padding: 20rpx;
+}
+
+.connet1 {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2rpx solid #f0f0f0;
+  padding-bottom: 10rpx;
+}
+
+.connet1>view:nth-of-type(1) {
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+.connet1>view:nth-of-type(2) {
+  font-size: 22rpx;
+  display: flex;
+  align-items: center;
+  border-radius: 21rpx;
+  border: 2rpx solid #f0f0f0;
+  padding: 4rpx 14rpx;
+}
+
+.box1 {
+  margin: 30rpx;
+  background-color: #ffffff;
+  border-radius: 20rpx;
+}
+
+.song {
+  padding: 0 30rpx;
+  border-bottom: 2rpx solid #F7F7F7;
+  position: relative;
+}
+
+.songName {
+  font-size: 28rpx;
+  padding: 10rpx 0;
+  color: #000000;
+}
+
+.author {
+  font-size: 24rpx;
+  margin-left: 20rpx;
+  color: #999999;
+  padding: 10rpx 0;
+}
+
+.sing {
+  font-size: 20rpx;
+  padding: 2rpx 14rpx;
+  border-radius: 30rpx;
+  border: 2rpx solid;
+  position: absolute;
+  right: 60rpx;
+  top: 20rpx;
+  border: 1px solid #62BCFA;
+  background: linear-gradient(to right, #FA6FD8, #62BCFA);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.push {
+  position: absolute;
+  right: 0;
+  top: 26rpx;
+}
+
+.push>image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.moreText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx 0;
+  font-size: 25rpx;
+  color: #999999;
+}
+
+/* 视频 */
+.box2 {
+  margin: 30rpx;
+  padding: 30rpx 30rpx 20rpx 30rpx;
+  background-color: #ffffff;
+  border-radius: 20rpx;
+}
+
+.video {
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.videoConnet {
+  display: flex;
+  padding: 15rpx;
+}
+
+.videoimg {
+  width: 135rpx;
+  height: 82rpx;
+  border-radius: 15rpx;
+}
+
+.title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: 20rpx;
+  overflow: hidden;
+}
+
+.titlea {
+  font-size: 26rpx;
+}
+
+.titleb {
+  display: flex;
+}
+
+.titleb>view {
+  margin-right: 25rpx;
+  padding: 10rpx 0;
+  color: #999999;
+  font-size: 24rpx;
+}
+
+.moreTexta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26rpx;
+  color: #999999;
+  padding-top: 15rpx;
+  border-top: 2rpx solid #F7F7F7;
+}
+
+/* 歌单 */
+.songList {
+  margin: 30rpx;
+  padding: 30rpx 30rpx 20rpx 30rpx;
+  background-color: #ffffff;
+  border-radius: 20rpx;
+}
+
+.songimg {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 20rpx;
+}
+
+/* 相关搜索 */
+.songConnet {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 26rpx;
+  color: #333333;
+}
+
+.songText {
+  margin: 0 30rpx 20rpx 0;
+  background-color: #fafafa;
+  padding: 10rpx 20rpx;
+  border-radius: 20rpx;
+}
+
+/* 歌手 */
+.ges {
+  display: flex;
+  align-items: center;
+  padding: 10rpx 0;
+}
+
+.gesImg {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.gesName {
+  font-size: 26rpx;
+  color: #333333;
+  margin-left: 30rpx;
+}
+
+/* 专辑 */
+.albumImg {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 20rpx;
+}
+
+.album {
+  margin-left: 30rpx;
+}
+
+.albumName {
+  font-size: 28rpx;
+  color: #333333;
+}
+
+.albumItem {
+  font-size: 24rpx;
+  color: #999999;
+  display: flex;
+  align-items: center;
+}
+.albumItem>view{
+margin-right: 20rpx;
+}
+/* 播单 */
+.djRadio {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.albumimg{
+  width: 20rpx;
+  height: 20rpx;
+}
+.transmit{
+  display: flex;
+  align-items: center;
+}
+.djRadioItem{
+  padding: 8rpx;
+}
+/* 用户 */
+.user{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.userImg{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.userName{
+  color: #5D87B6;
+  font-size: 28rpx;
+  margin-left: 20rpx;
+}
+.addimg{
+  width: 20rpx;
+  height: 20rpx;
+}
+.attention{
+  font-size: 24rpx;
+  display: flex;
+  align-items: center;
+  border: 2rpx solid #FF4B4B;
+  color: #FF4B4B;
+  padding: 0 8rpx;
+  border-radius: 30rpx;
+  position: absolute;
+  right: 10rpx;
+  top: 0;
+}
+.attentiona{
+  font-size: 30rpx;
+  margin-right: 2rpx;
+}
+.sex{
+  margin-left: 60rpx;
+}
+.seximg{
+  width: 30rpx;
+  height: 30rpx;
+}

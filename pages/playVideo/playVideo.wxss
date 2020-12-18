@@ -1,0 +1,65 @@
+.videoCss {
+  width: 100%;
+}
+
+.connet {
+  background-color: black;
+  width: 100vw;
+  height: 99vh;
+  padding-top: 1vh;
+  position: relative;
+}
+
+.connet1 {
+  margin-top: 200rpx;
+}
+.connet2{
+  color: #ffffff;
+  margin: 0 30rpx;
+  position: absolute;
+  bottom: 30rpx;
+}
+.connet2-1 {
+  display: flex;
+  align-items: center;
+  font-size: 26rpx;
+  font-weight: bold;
+}
+
+.img {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-right: 10rpx;
+}
+.description{
+  font-size: 26rpx;
+  padding: 20rpx 0;
+}
+.playTime{
+font-size: 22rpx;
+color: #999999;
+}
+.attention{
+  background-color: red;
+  padding: 0 20rpx;
+  border-radius: 15rpx;
+  margin-left: 10rpx;
+
+}
+.connet3{
+  position: absolute;
+  color: #ffffff;
+  right: 40rpx;
+  bottom: 200rpxs;
+}
+.connet3>view{
+  margin-bottom: 30rpx;
+}
+.imga{
+  width: 50rpx;
+  height: 50rpx;
+}
+.num{
+  font-size: 24rpx;
+}

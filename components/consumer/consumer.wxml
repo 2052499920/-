@@ -1,0 +1,18 @@
+<view class="songList">
+  <view wx:for="{{arr}}" wx:key='index' class="user">
+    <view>
+      <image src="{{item.avatarUrl}}" class="userImg"></image>
+    </view>
+    <view class="userName">
+      <view class="userNamea">
+        <view>{{item.nickname}}</view>
+        <view class="sex">
+      <view wx:if="{{item.gender===1}}"><image src="../../assets/man.png" class="seximg"></image></view>
+      <view wx:if="{{item.gender===2}}"><image src="../../assets/girl.png" class="seximg"></image></view>
+    </view>
+      </view>
+      <view class="userNameb">{{item.signature}}</view>
+    </view>
+    <view class="attention"><text class="attentiona">+</text>关注</view>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+<view class="box">
+  <view class="connet">
+    <view wx:for="{{arr}}" wx:key='index' class="conneta">
+      <view class="songName">{{item.name}}</view>
+      <view class="albumName">{{item.artists[0].name}} - {{item.album.name}}</view>
+      <view class="{{flag===false? 'lyrics':''}}">
+        <text>{{item.lyrics.txt}}</text>
+      </view>
+      <view class="unfold" bindtap="unfold" wx:if="{{!flag}}">展开歌词 <van-icon name="arrow-down" /></view>
+      <view class="unfold" bindtap="packUp" wx:if="{{flag}}">收起歌词 <van-icon name="arrow-up" /></view>
+      <view class="push">
+        <image src="../../assets/push.png"></image>
+      </view>
+      <view class="word">词</view>
+    </view>
+  </view>
+</view>

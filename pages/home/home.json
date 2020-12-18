@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "bannet":"../../components/bannet/bannet",
+    "classify":"../../components/classify/classify",
+    "recommend":"../../components/recommend/recommend",
+    "menu":"../../components/menu/menu",
+    "newSong":"../../components/newSong/newSong",
+    "rankingList":"../../components/rankingList/rankingList",
+    "van-search": "@vant/weapp/search/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "playsong":"../../components/playsong/playsong"
+  },
+  "navigationBarTitleText": "首页"
+}

@@ -1,0 +1,35 @@
+.videoConnet {
+  display: flex;
+  padding: 15rpx;
+}
+.videoimg {
+  width: 135rpx;
+  height: 82rpx;
+  border-radius: 15rpx;
+}
+.title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: 20rpx;
+  overflow: hidden;
+}
+
+.titlea {
+  font-size: 26rpx;
+}
+
+.titleb {
+  display: flex;
+}
+
+.titleb>view {
+  margin-right: 25rpx;
+  padding: 10rpx 0;
+  color: #999999;
+  font-size: 24rpx;
+}
+.songimg {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 20rpx;
+}

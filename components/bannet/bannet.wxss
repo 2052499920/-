@@ -1,0 +1,11 @@
+.slide-image{
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+  padding-right: 40rpx;
+  margin: 0 20rpx;
+}
+.imga{
+  border-radius: 20rpx;
+  overflow: hidden;
+}

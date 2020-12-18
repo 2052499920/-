@@ -1,0 +1,41 @@
+<view class="honeConnet">
+  <view class="connet">
+  <view class="search">
+    <view bindtap="menu">
+      <van-icon name="wap-nav" />
+    </view>
+    <view class="input">
+      <van-search value="{{ value }}" input-align="center" placeholder="{{showKeyword}}" shape="round"
+        bindtap="search" />
+    </view>
+    <view>
+      <image src="../../assets/voice.png" class="img"></image>
+    </view>
+  </view>
+  <view>
+    <bannet arr='{{arr}}'></bannet>
+  </view>
+  <view>
+    <classify></classify>
+  </view>
+</view>
+<view>
+  <recommend></recommend>
+</view>
+<view>
+  <newSong></newSong>
+</view>
+<view>
+  <rankingList></rankingList>
+</view>
+</view>
+<!--登录菜单-->
+<view>
+  <van-popup show="{{show}}" position="left" custom-style="width:80%;height:100%" bind:close="onClose">
+    <menu  bind:show="onClose"></menu>
+  </van-popup>
+</view>
+
+<view class="fiexdPlay">
+ <playsong></playsong>
+</view>
